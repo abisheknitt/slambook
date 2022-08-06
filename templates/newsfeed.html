@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slambook</title><style>
+    *{
+        font-family: poppins sans-serif;
+    }  
+    h1{
+        color:white;
+        font-family: poppins;
+        font-weight: bolder;
+        font-size: 45px;
+    }
+    nav{
+        background-color: orange;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 10px;
+        justify-content: space-between;
+    }
+    .logout-but,.search{
+       margin: 0% auto;
+       height: 30px;
+       width: 100px;
+       display: block;
+       color: aliceblue;
+       background-color: #4CAF50;
+       border: none;
+       border-radius: 10px;
+       cursor: pointer;
+   }
+   .logout-but:hover,.search:hover{
+       background-color: black;
+       color: aliceblue;
+   }
+   form{
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        padding: 10px;
+   }
+   .bar{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-family: poppins sans-serif;
+    font-size: 18px;
+    color: black
+   }
+   button{
+    cursor: pointer;
+   }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="right">
+            <h1>Slambook</h1>
+        </div>
+        <div>
+            <form action="/searcheduser" method="POST">
+                <input type="text" class="bar" placeholder="search" name="search">
+                <input type="submit" class="search" value="search">
+            </form>
+        </div>
+        <div class="left">
+            <button type="submit" class="logout-but">Logout</button>
+        </div>
+    </nav><br>   
+</body>
+</html>

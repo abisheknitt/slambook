@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Slambook</title><style>
+    *{
+        box-sizing: border-box;
+    }
+    h1{
+        color:white;
+        text-align: center;
+        font-family: poppins;
+        font-weight: bolder;
+        background-color:orange;
+        font-size: 45px;
+        border-radius: 5px;
+    }
+    h2{
+        color: white;
+        font-family: poppins;
+        font-weight: bolder;
+        font-size: 40px;
+        text-align: center;
+    }
+    #mainframe{
+        width: 23%;
+        height: 60%;
+        background-color: grey;
+        margin: 0% auto;
+        display: block;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    form{
+        align-items: center;
+    }
+    .button{
+        margin: 0% auto;
+        height: 30px;
+        width: 120px;
+        display: block;
+        color: aliceblue;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+    .button:hover{
+        background-color: black;
+        color: aliceblue;
+    }
+    label{
+        color: aliceblue;
+        font-family: poppins;
+        font-size: 18px;
+        text-align: center;
+    }
+    input{
+        margin: 10px;
+        font-family: poppins;
+        border: 1px solid wheat;
+        border-radius: 7px;
+    }
+    p{
+        text-align: center;
+        font-family: poppins;
+        color: aliceblue;
+        
+    }</style>
+    
+</head>
+<body>
+    <h1>Slambook</h1>
+    <br><br><br>
+    <div id="mainframe">
+        <h2>Login</h2>
+        <form action="/homepage" method="POST">
+            <div>
+                <label>username</label>
+                <input type="text" name="username">
+            </div>
+            <br>
+            <div>
+                <label>password</label>
+                <input type="password" name="password">
+            </div>
+            <input type="submit" class="button" value="login"><br>
+        </form>
+        <p>Don't have account?<a href="register"> Register here</a></p>
+    </div>
+
+<script src="script.js"></script>    
+</body>
+</html>
